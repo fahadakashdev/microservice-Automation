@@ -7,5 +7,6 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(port, () => {
+    // eslint-disable-next-line no-console
     console.log(`Notification service listening on port ${port}`);
 });

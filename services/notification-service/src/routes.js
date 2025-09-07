@@ -28,8 +28,6 @@ router.post('/notifications', (req, res) => {
     // In a real application, you would:
     // 1. Save to database
     // 2. Send actual notifications (email, SMS, push)
-    console.log(`Sending ${type} notification to user ${userId}: ${message}`);
-    
     res.status(201).json({
         id: Date.now(),
         userId,

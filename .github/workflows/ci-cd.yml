@@ -46,7 +46,9 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: services/${{ matrix.service }}/package-lock.json
+          cache-dependency-path: |
+            services/${{ matrix.service }}/package-lock.json
+            services/${{ matrix.service }}/package.json
 
       - name: Install dependencies
         if: needs.detect-changes.outputs[matrix.service] == 'true'

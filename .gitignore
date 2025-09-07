@@ -1,8 +1,10 @@
 # Dependencies
 node_modules/
 **/node_modules/
-package-lock.json
-**/package-lock.json
+
+# Keep package-lock.json files for npm caching
+!package-lock.json
+!services/*/package-lock.json
 
 # Environment variables
 .env

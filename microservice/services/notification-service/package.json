@@ -1,7 +1,7 @@
 {
-  "name": "user-service",
+  "name": "notification-service",
   "version": "1.0.0",
-  "description": "User microservice",
+  "description": "Notification microservice",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
